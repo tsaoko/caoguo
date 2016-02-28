@@ -1,0 +1,388 @@
+/* app css stylesheet */
+body, html {
+  background-color: #169e58;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+}
+
+.Belt {
+  max-width: 1160px;
+  margin: 0px auto;
+}
+
+.Header {
+  background-color: #ebebeb;
+}
+
+.Header__LogoImage {
+  max-width: 128px;
+}
+
+.Header__Content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navigation {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.Navigation__Item {
+  padding: 0 24px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #000;
+}
+
+.Navigation__Item:last-child {
+  padding-right: 0;
+}
+
+.Banner {
+  background-color: #ebebeb;
+}
+
+.Banner__Content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Banner__City {
+  -webkit-transform: translateY(24px);
+      -ms-transform: translateY(24px);
+          transform: translateY(24px);
+          min-width: 340px;
+}
+
+.Banner__CityImage {
+  max-height: 380px;
+}
+
+.Banner__Title {
+  font: 30px Lato;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+
+.Banner__Body {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 1.8em;
+  padding-bottom: 16px;
+}
+
+.Banner__Callout {
+  padding-left: 48px;
+}
+
+.CallToAction__Item {
+  margin: 8px;
+}
+
+.Carousel {
+  background-color: #FFF;
+  padding: 48px 0;
+}
+
+.Carousel__ItemList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding-bottom: 48px;
+}
+
+.CarouselItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.CarouselItem__Icon, .CarouselItem__Icon > img {
+  max-height: 72px;
+}
+
+.CarouselItem__Icon {
+  -webkit-transition: -webkit-transform 200ms;
+          transition: transform 200ms;
+}
+
+
+.CarouselItem__Label {
+  padding-top: 16px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.CarouselItem--Active .CarouselItem__Label{
+  font-weight: bold;
+}
+
+.CarouselItem--Active .CarouselItem__Icon{
+  /*-webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);*/
+}
+.CarouselContent {
+  height: 280px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.CarouselContent__Title {
+  font: 32px Lato;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
+.CarouselContent__Content {
+  max-width: 600px;
+}
+
+.Tagline {
+  font-size: 18px;
+  font-weight: lighter;
+  padding-bottom: 16px;
+  line-height: 1.8em;
+}
+
+.Carousel__Arrow {
+  font-size: 56px;
+  color: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.Button, .tito-submit {
+  background-color: #eeb211;
+  color: #FFF;
+  font-size: 14px;
+  display: inline-block;
+  padding: 8px 16px;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.Button--Secondary {
+  background-color: #3369e8;
+}
+
+.Button--Tertiary{
+  background-color: #169e58;
+}
+
+.Super {
+  font-size: 18px;
+}
+
+.Footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FFF;
+  padding: 24px 0;
+}
+
+.FooterTitle {
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+.SocialMedia__Icon {
+  color: #FFF;
+  font-size: 24px;
+  padding: 0 8px;
+}
+
+.SocialMedia__Icon:first-child {
+  padding-left: 0;
+}
+
+.Email__Input {
+  background-color: #FFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Email__InputField {
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  color: #000;
+}
+
+.Share {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Share__Description {
+  padding-right: 8px;
+}
+
+.Share__Item {
+  padding-right: 4px;
+  color: black;
+}
+
+.Speakers {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 32px 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Speaker {
+  padding: 16px;
+  text-align: center;
+  width: 320px;
+}
+
+.Speaker__ImageContainer {
+  border: 4px solid #3366ff;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.Speaker__Image {
+  width: 135px;
+  height: 135px;
+}
+
+.Speaker__Name {
+  font: 18px 'Lato';
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.Speaker__Description {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.Section {
+  background-color: #fff;
+}
+
+.Section__Title {
+  font: 32px 'Lato';
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 736px) {
+  .Banner__Content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .Banner__Title {
+    font-size: 24px;
+  }
+
+  .Banner__City {
+    -webkit-transform: inherit;
+        -ms-transform: inherit;
+            transform: inherit;
+    padding-bottom: 16px;
+  }
+
+  .Banner__Callout {
+    padding-left: 0;
+  }
+
+  .Header__Content {
+    padding: 16px;
+  }
+
+  .Carousel {
+    padding: 16px;
+  }
+
+  .Carousel__ItemList {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  
+  .CarouselItem {
+    padding: 8px;
+  }
+
+  .Footer {
+    padding: 16px;
+  }
+}
